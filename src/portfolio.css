@@ -1,0 +1,70 @@
+body {
+    font-family: 'Inter', sans-serif;
+    background: linear-gradient(135deg, #0f0c29, #1a1a3c, #10192f);
+    color: white;
+    min-height: 100vh;
+}
+
+.gradient-text {
+    background: linear-gradient(90deg, #ec4899, #8b5cf6, #6366f1);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.gradient-border {
+    border: 2px solid transparent;
+    border-image: linear-gradient(90deg, #ec4899, #8b5cf6, #6366f1) 1;
+}
+
+
+.service-card {
+    background-color: #0f172a;
+    color: white;
+    border: 1px solid #1e293b;
+    border-radius: 12px;
+    padding: 24px;
+    transition: all 0.3s ease;
+    box-shadow: 0 0 0 transparent;
+    cursor: pointer;
+}
+
+
+.service-card:hover {
+    border-color: #a855f7;
+    box-shadow: 0 0 20px rgba(168, 85, 247, 0.5);
+    transform: scale(1.03);
+}
+
+
+@media (min-width: 768px) {
+    .mobile-menu {
+        max-height: none !important;
+    }
+}
+
+@media (width >=1800px) {
+    .hero {
+        max-width: 55%;
+    }
+
+    .services {
+        max-width: 55%;
+    }
+}
+
+@keyframes slideInFade {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.smooth-title {
+    animation: slideInFade 1.2s ease-out forwards;
+}
