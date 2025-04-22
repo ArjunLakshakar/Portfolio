@@ -13,7 +13,7 @@ body {
 }
 
 .gradient-border {
-    border: 2px solid transparent;
+    border: 1px solid transparent;
     border-image: linear-gradient(90deg, #ec4899, #8b5cf6, #6366f1) 1;
 }
 
